@@ -1,0 +1,17 @@
+{
+  "@sapui5/generator-sapui5-templates": {
+    "promptValues": {
+      "ApplicationTitle": "Todos but not",
+      "ApplicationDescription": "",
+      "FLP": false,
+      "GroupId": "$auto",
+      "ServiceBaseUri": "",
+      "DatasourceUrl": "",
+      "ObjectCollection": "Todo",
+      "ObjectCollection_Key": "1",
+      "Object_Identifier": "My Todo",
+      "Object_Number": "",
+      "Object_UnitOfMeasure": ""
+    }
+  }
+}

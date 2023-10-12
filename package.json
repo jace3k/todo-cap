@@ -1,0 +1,45 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
+    "@sap/xssec": "^3",
+    "express": "^4",
+    "passport": "^0.6.0"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.108.15"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "deploy": "cds deploy --to hana:jacek_container",
+    "watch:hybrid": "cds watch --profile hybrid",
+    "watch-webapp": "cds watch --open webapp/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "build": {
+      "tasks": [
+        {
+          "for": "hana",
+          "dest": "../db"
+        },
+        {
+          "for": "node-cf"
+        }
+      ]
+    },
+    "requires": {
+      "db": "hana"
+    }
+  },
+  "sapux": [
+    "app/webapp"
+  ]
+}
