@@ -17,6 +17,9 @@
     "@sap/cds-dk": "^7",
     "@sap/ux-specification": "^1.108.15"
   },
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "start": "cds-serve",
     "deploy": "cds deploy --to hana:jacek_container",

@@ -25,7 +25,8 @@
     ],
     "redirect-uris": [
       "https://*.applicationstudio.cloud.sap/**",
-      "http://localhost:5000/**"
+      "http://localhost:5000/**",
+      "https://*trial-dev-todo-app.cfapps.us10-001.hana.ondemand.com/**"
     ]
   }
 }
